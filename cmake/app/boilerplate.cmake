@@ -99,7 +99,7 @@ include(${ZEPHYR_BASE}/cmake/version.cmake)  # depends on hex.cmake
 #
 
 include(${ZEPHYR_BASE}/cmake/python.cmake)
-include(${ZEPHYR_BASE}/cmake/git.cmake)  # depends on version.cmake
+#include(${ZEPHYR_BASE}/cmake/git.cmake)  # depends on version.cmake
 include(${ZEPHYR_BASE}/cmake/ccache.cmake)
 
 if(${CMAKE_CURRENT_SOURCE_DIR} STREQUAL ${CMAKE_CURRENT_BINARY_DIR})
