@@ -58,8 +58,14 @@ set_property(GLOBAL PROPERTY GENERATED_KERNEL_SOURCE_FILES "")
 
 set(APPLICATION_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR} CACHE PATH "Application Source Directory")
 set(APPLICATION_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR} CACHE PATH "Application Binary Directory")
+message("test application_source_dir and application_binary_dir")
+message("=============================================")
+message(${APPLICATION_SOURCE_DIR})
+MESSAGE(${APPLICATION_BINARY_DIR})
+message("=============================================")
 
 set(__build_dir ${CMAKE_CURRENT_BINARY_DIR}/zephyr)
+
 
 set(PROJECT_BINARY_DIR ${__build_dir})
 
@@ -139,6 +145,7 @@ get_property(cached_board_value CACHE BOARD PROPERTY VALUE)
 # value we give him a warning about needing to clean the build
 # directory to be able to change boards.
 
+
 set(board_cli_argument ${cached_board_value}) # Either new or old
 if(board_cli_argument STREQUAL CACHED_BOARD)
   # We already have a CACHED_BOARD so there is no new input on the CLI
@@ -178,7 +185,9 @@ endif()
 
 assert(BOARD "BOARD not set")
 message(STATUS "Selected BOARD ${BOARD}")
-
+message("========================")
+message("test BOARD is   "${BOARD})
+message("========================")
 # Store the selected board in the cache
 set(CACHED_BOARD ${BOARD} CACHE STRING "Selected board")
 
@@ -407,6 +416,9 @@ set(CONF_FILE ${CONF_FILE} CACHE STRING "If desired, you can build the applicati
 the configuration settings specified in an alternate .conf file using this parameter. \
 These settings will override the settings in the application’s .config file or its default .conf file.\
 Multiple files may be listed, e.g. CONF_FILE=\"prj1.conf prj2.conf\"")
+MESSAGE("===========================")
+MESSAGE( "IT TEST CONF_FILE IS  "${CONF_FILE})
+MESSAGE("===========================")
 
 if(ZEPHYR_EXTRA_MODULES)
   # ZEPHYR_EXTRA_MODULES has either been specified on the cmake CLI or is
@@ -415,6 +427,10 @@ if(ZEPHYR_EXTRA_MODULES)
 elseif(DEFINED ENV{ZEPHYR_EXTRA_MODULES})
   set(ZEPHYR_EXTRA_MODULES $ENV{ZEPHYR_EXTRA_MODULES})
 endif()
+
+MESSAGE("===========================")
+MESSAGE( "IT TEST ZEPHYR_EXTRA_MODULES IS  "${ZEPHYR_EXTRA_MODULES})
+MESSAGE("===========================")
 
 if(DTC_OVERLAY_FILE)
   # DTC_OVERLAY_FILE has either been specified on the cmake CLI or is already
@@ -455,10 +471,14 @@ include(${ZEPHYR_BASE}/cmake/host-tools.cmake)
 # preprocess DT sources, and then, after we have finished processing
 # both DT and Kconfig we complete the target-specific configuration,
 # and possibly change the toolchain.
+message("================")
 include(${ZEPHYR_BASE}/cmake/zephyr_module.cmake)
+message("AFTER include zephyr_module.cmake it generate build/zephyr_modules.txt")
+
 include(${ZEPHYR_BASE}/cmake/generic_toolchain.cmake)
 include(${ZEPHYR_BASE}/cmake/dts.cmake)
 include(${ZEPHYR_BASE}/cmake/kconfig.cmake)
+
 
 set(SOC_NAME   ${CONFIG_SOC})
 set(SOC_SERIES ${CONFIG_SOC_SERIES})
@@ -524,7 +544,6 @@ if(CONFIG_QEMU_TARGET)
     )
   endif()
 endif()
-
 # "app" is a CMake library containing all the application code and is
 # modified by the entry point ${APPLICATION_SOURCE_DIR}/CMakeLists.txt
 # that was specified when cmake was called.
@@ -532,6 +551,10 @@ zephyr_library_named(app)
 set_property(TARGET app PROPERTY ARCHIVE_OUTPUT_DIRECTORY app)
 
 add_subdirectory(${ZEPHYR_BASE} ${__build_dir})
+MESSAGE("=======================")
+message("__build_dir is " ${__build_dir})
+message(" BREAK POINT")
+MESSAGE("=======================")
 
 # Link 'app' with the Zephyr interface libraries.
 #
@@ -547,13 +570,18 @@ foreach(boilerplate_lib ${ZEPHYR_INTERFACE_LIBS_PROPERTY})
   # directories', but it is also possible to have defines and compiler
   # flags in the interface of a library.
   #
+	message("=============================")
+	message("this is boilerplate_lib " ${boilerplate_lib})
+	message("=============================")
+
   string(TOUPPER ${boilerplate_lib} boilerplate_lib_upper_case) # Support lowercase lib names
-  target_link_libraries_ifdef(
-    CONFIG_APP_LINK_WITH_${boilerplate_lib_upper_case}
-    app
-    PUBLIC
-    ${boilerplate_lib}
-    )
+
+#  target_link_libraries_ifdef(
+#    CONFIG_APP_LINK_WITH_${boilerplate_lib_upper_case}
+#    app
+#    PUBLIC
+#   ${boilerplate_lib}
+#    )
 endforeach()
 
 if("${CMAKE_EXTRA_GENERATOR}" STREQUAL "Eclipse CDT4")
@@ -563,3 +591,5 @@ if("${CMAKE_EXTRA_GENERATOR}" STREQUAL "Eclipse CDT4")
   include(${ZEPHYR_BASE}/cmake/ide/eclipse_cdt4_generator_amendment.cmake)
   eclipse_cdt4_generator_amendment(1)
 endif()
+
+message( "END THE BOILERPLATE")

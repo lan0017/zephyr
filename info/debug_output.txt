@@ -1,0 +1,206 @@
+Running with debug output on.
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3.4") 
+   Called from: [6]	/home/lan17/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.13/Modules/FindPackageMessage.cmake
+                [5]	/home/lan17/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake
+                [4]	/home/lan17/zephyrproject/zephyr/cmake/backports/FindPythonInterp.cmake
+                [3]	/home/lan17/zephyrproject/zephyr/cmake/python.cmake
+                [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- Selected BOARD hifive1
+   Called from: [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- Found west: /home/lan17/.local/bin/west (found suitable version "0.6.2", minimum required is "0.6.0")
+   Called from: [3]	/home/lan17/zephyrproject/zephyr/cmake/host-tools.cmake
+                [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- Loading /home/lan17/zephyrproject/zephyr/boards/riscv/hifive1/hifive1.dts as base
+   Called from: [3]	/home/lan17/zephyrproject/zephyr/cmake/dts.cmake
+                [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- Overlaying /home/lan17/zephyrproject/zephyr/dts/common/common.dts
+   Called from: [3]	/home/lan17/zephyrproject/zephyr/cmake/dts.cmake
+                [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+Devicetree configuration written to /home/lan17/zephyrproject/zephyr/build/zephyr/include/generated/generated_dts_board.conf
+Parsing Kconfig tree in /home/lan17/zephyrproject/zephyr/Kconfig
+Loaded configuration '/home/lan17/zephyrproject/zephyr/boards/riscv/hifive1/hifive1_defconfig'
+Merged configuration '/home/lan17/zephyrproject/zephyr/samples/hello_world/prj.conf'
+Configuration saved to '/home/lan17/zephyrproject/zephyr/build/zephyr/.config'
+-- The C compiler identification is GNU 8.3.0
+   Called from: [4]	/home/lan17/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.13/Modules/CMakeDetermineCompilerId.cmake
+                [3]	/home/lan17/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.13/Modules/CMakeDetermineCCompiler.cmake
+                [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- The CXX compiler identification is GNU 8.3.0
+   Called from: [4]	/home/lan17/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.13/Modules/CMakeDetermineCompilerId.cmake
+                [3]	/home/lan17/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.13/Modules/CMakeDetermineCXXCompiler.cmake
+                [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- The ASM compiler identification is GNU
+   Called from: [3]	/home/lan17/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.13/Modules/CMakeDetermineASMCompiler.cmake
+                [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- Found assembler: /home/lan17/zephyr-sdk-0.10.3/riscv64-zephyr-elf/bin/riscv64-zephyr-elf-gcc
+   Called from: [3]	/home/lan17/.local/lib/python3.6/site-packages/cmake/data/share/cmake-3.13/Modules/CMakeDetermineASMCompiler.cmake
+                [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- Cache files will be written to: /home/lan17/.cache/zephyr
+   Called from: [2]	/home/lan17/zephyrproject/zephyr/cmake/app/boilerplate.cmake
+                [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- Configuring done
+-- Generating /home/lan17/zephyrproject/zephyr/build
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/samples/hello_world/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/arch
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/arch/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/arch/common
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/arch/common/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/arch/arch/riscv
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/arch/riscv/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/arch/arch/riscv/core
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/arch/riscv/core/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/lib
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/lib/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/lib/libc
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/lib/libc/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/lib/libc/minimal
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/lib/libc/minimal/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/lib/posix
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/lib/posix/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/lib/gui
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/lib/gui/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/lib/os
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/lib/os/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/soc/riscv
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/soc/riscv/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/soc/riscv/riscv-privilege
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/soc/riscv/riscv-privilege/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/soc/riscv/riscv-privilege/common
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/soc/riscv/riscv-privilege/common/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/soc/riscv/riscv-privilege/sifive-freedom
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/soc/riscv/riscv-privilege/sifive-freedom/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/boards
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/boards/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/boards/riscv/hifive1
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/boards/riscv/hifive1/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/ext
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/ext/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/ext/lib
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/ext/lib/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/ext/lib/crypto
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/ext/lib/crypto/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/ext/hal
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/ext/hal/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/ext/hal/cmsis
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/ext/hal/cmsis/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/ext/debug
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/ext/debug/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/debug
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/debug/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/debug/tracing
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/debug/tracing/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/logging
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/logging/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/fs
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/fs/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/random
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/random/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/storage
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/storage/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/fb
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/fb/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/power
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/power/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/power/policy
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/power/policy/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/stats
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/stats/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/subsys/testsuite
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/subsys/testsuite/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/drivers
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/drivers/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/drivers/console
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/drivers/console/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/drivers/interrupt_controller
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/drivers/interrupt_controller/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/drivers/gpio
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/drivers/gpio/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/drivers/pinmux
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/drivers/pinmux/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/drivers/spi
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/drivers/spi/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/drivers/serial
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/drivers/serial/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/drivers/timer
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/drivers/timer/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/atmel
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/atmel/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/atmel/asf
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/atmel/asf/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/atmel/asf/common
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/atmel/asf/common/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/atmel/asf/common/components
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/atmel/asf/common/components/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/atmel/asf/common/components/wifi
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/atmel/asf/common/components/wifi/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/civetweb
+   Called from: [1]	/home/lan17/zephyrproject/modules/lib/civetweb/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/esp-idf
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/esp-idf/zephyr/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/fatfs
+   Called from: [1]	/home/lan17/zephyrproject/modules/fs/fatfs/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/cypress
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/cypress/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/nordic
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/nordic/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/openisa
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/openisa/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/microchip
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/microchip/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/silabs
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/silabs/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/st
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/st/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/stm32
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/stm32/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/ti
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/ti/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/ti/simplelink
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/ti/simplelink/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/ti/simplelink/source/ti/devices
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/ti/simplelink/source/ti/devices/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/libmetal
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/libmetal/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/lvgl
+   Called from: [1]	/home/lan17/zephyrproject/modules/lib/gui/lvgl/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/mbedtls
+   Called from: [1]	/home/lan17/zephyrproject/modules/crypto/mbedtls/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/mcumgr
+   Called from: [1]	/home/lan17/zephyrproject/modules/lib/mcumgr/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/nffs
+   Called from: [1]	/home/lan17/zephyrproject/modules/fs/nffs/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/nxp
+   Called from: [1]	/home/lan17/zephyrproject/modules/hal/nxp/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/open-amp
+   Called from: [1]	/home/lan17/zephyrproject/modules/lib/open-amp/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/openthread
+   Called from: [1]	/home/lan17/zephyrproject/modules/lib/openthread/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/segger
+   Called from: [1]	/home/lan17/zephyrproject/modules/debug/segger/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/tinycbor
+   Called from: [1]	/home/lan17/zephyrproject/modules/lib/tinycbor/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/modules/littlefs
+   Called from: [1]	/home/lan17/zephyrproject/modules/fs/littlefs/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/kernel
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/kernel/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/cmake/flash
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/cmake/flash/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/cmake/usage
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/cmake/usage/CMakeLists.txt
+-- Generating /home/lan17/zephyrproject/zephyr/build/zephyr/cmake/reports
+   Called from: [1]	/home/lan17/zephyrproject/zephyr/cmake/reports/CMakeLists.txt
+-- Generating done
+-- Build files have been written to: /home/lan17/zephyrproject/zephyr/build

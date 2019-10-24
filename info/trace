@@ -1,0 +1,13 @@
+Running with trace output on.
+-- Selected BOARD hifive1
+-- Found west: /home/lan17/.local/bin/west (found suitable version "0.6.2", minimum required is "0.6.0")
+-- Loading /home/lan17/zephyrproject/zephyr/boards/riscv/hifive1/hifive1.dts as base
+-- Overlaying /home/lan17/zephyrproject/zephyr/dts/common/common.dts
+Devicetree configuration written to /home/lan17/zephyrproject/zephyr/build/zephyr/include/generated/generated_dts_board.conf
+Parsing Kconfig tree in /home/lan17/zephyrproject/zephyr/Kconfig
+Loaded configuration '/home/lan17/zephyrproject/zephyr/build/zephyr/.config'
+No change to '/home/lan17/zephyrproject/zephyr/build/zephyr/.config'
+-- Cache files will be written to: /home/lan17/.cache/zephyr
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lan17/zephyrproject/zephyr/build

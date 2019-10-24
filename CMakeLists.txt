@@ -81,6 +81,8 @@ zephyr_include_directories(
   ${USERINCLUDE}
   ${STDINCLUDE}
 )
+MESSAGE("====================")
+MESSAGE("IN TOP CMAKELISTSTS.TXT PROJECT_BINARY_DIR IS "${PROJECT_BINARY_DIR})
 
 # Don't add non-existing include directories, it creates noise and
 # warnings in some tooling
@@ -453,6 +455,9 @@ add_subdirectory(boards)
 add_subdirectory(ext)
 add_subdirectory(subsys)
 add_subdirectory(drivers)
+
+MESSAGE("=================")
+MESSAGE("IN TOP CMAKELISTS.TXT CMAKE_BINARY_DIR IS " ${CMAKE_BINARY_DIR})
 
 # Include zephyr modules generated CMake file.
 if(EXISTS ${CMAKE_BINARY_DIR}/zephyr_modules.txt)
@@ -959,14 +964,17 @@ if(CONFIG_USERSPACE)
   add_library(output_lib_interface INTERFACE)
 
   target_link_libraries(output_lib output_lib_interface)
-
+	message("=========================")
   foreach(incl ${include_dir_in_interface})
+		message("this is include_dir_in_interface" ${incl})
     target_include_directories(output_lib_interface INTERFACE ${incl})
   endforeach()
 
   foreach(incl ${sys_include_dir_in_interface})
+		message("this is sys_include_dir_in_interface" ${incl})
     target_include_directories(output_lib_interface SYSTEM INTERFACE ${incl})
   endforeach()
+	MESSAGE("ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
   set(OUTPUT_OBJ_PATH ${CMAKE_CURRENT_BINARY_DIR}/CMakeFiles/output_lib.dir/${OUTPUT_OBJ})
 
